@@ -10,7 +10,7 @@ export const Profile = () => {
         </div>
 
         <div>ava+description</div>
-<MyPosts/>
+<MyPosts />
     </div>
 }
 
