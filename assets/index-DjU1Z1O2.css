@@ -1,0 +1,1 @@
+.app-wrapper{margin:0 auto;display:grid;width:1200px;grid-template-areas:"h h" "n c";grid-template-rows:60px 1fr;grid-template-columns:2fr 10fr}.app-wrapper-content{grid-area:c;background-color:#d3ed92}._header_1a7to_1{grid-area:h;background-color:#0ff}._header_1a7to_1 img{width:50px}._nav_1xtyq_1{grid-area:n;background-color:#ce92dc}._item_1xtyq_11{color:#fff}
