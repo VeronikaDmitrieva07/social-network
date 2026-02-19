@@ -5,19 +5,19 @@ export const Navbar = () => {
     return <nav className={s.nav}>
         <div className={s.item}>
             <NavLink to="/profile"
-                     className={({ isActive }) => isActive ? s.activeLink : undefined}>Profile</NavLink>
+                     className={({isActive}) => isActive ? s.activeLink : undefined}>Profile</NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to="/dialogs" className={({ isActive }) => isActive ? s.activeLink : undefined}>Dialogs</NavLink>
+            <NavLink to="/dialogs" className={({isActive}) => isActive ? s.activeLink : undefined}>Messages</NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to="/news" className={({ isActive }) => isActive ? s.activeLink : undefined}>News</NavLink>
+            <NavLink to="/news" className={({isActive}) => isActive ? s.activeLink : undefined}>News</NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to="/music" className={({ isActive }) => isActive ? s.activeLink : undefined}>Music</NavLink>
+            <NavLink to="/music" className={({isActive}) => isActive ? s.activeLink : undefined}>Music</NavLink>
         </div>
         <div className={s.item}>
-            <NavLink to="/settings" className={({ isActive }) => isActive ? s.activeLink : undefined}>Settings</NavLink>
+            <NavLink to="/settings" className={({isActive}) => isActive ? s.activeLink : undefined}>Settings</NavLink>
         </div>
     </nav>
 }
