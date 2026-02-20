@@ -1,15 +1,15 @@
 import {MyPosts} from "./MyPosts/MyPosts.tsx";
 import {ProfileInfo} from "./ProfileInfo/ProfileInfo.tsx";
-import type {PostType} from "../../App.tsx";
+import type {profilePageType} from "../../redux/state.ts";
 
 export type ProfileType = {
-    posts: PostType[],
+    postsState: profilePageType
 }
 
-export const Profile = ({posts}: ProfileType) => {
+export const Profile = ({postsState}: ProfileType) => {
     return <div>
         <ProfileInfo/>
-        <MyPosts posts={posts}/>
+        <MyPosts posts={postsState.posts}/>
     </div>
 }
 

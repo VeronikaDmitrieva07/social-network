@@ -1,23 +1,22 @@
 import s from "./Dialogs.module.css"
 import {DialogItem} from "./DialogItem/DialogItem.tsx";
 import {Message} from "./Message/Message.tsx";
-import type {DialogType, MessageType} from "../../App.tsx";
+import type {dialogsPageType} from "../../redux/state.ts";
 
 type DialogsType = {
-    dialogs: DialogType[]
-    messages: MessageType[]
+    dialogsState: dialogsPageType
 }
 
-export const Dialogs = ({dialogs, messages}: DialogsType) => {
+export const Dialogs = ({dialogsState}: DialogsType) => {
     return (
         <div className={s.dialogs}>
 
             <div className={s.dialogsItems}>
-                {dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)}
+                {dialogsState.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)}
             </div>
 
             <div className={s.messages}>
-                {messages.map(m => <Message message={m.message}/>)}
+                {dialogsState.messages.map(m => <Message message={m.message}/>)}
             </div>
 
         </div>

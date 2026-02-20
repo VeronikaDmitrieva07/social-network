@@ -1,6 +1,6 @@
 import s from "./MyPosts.module.css";
 import {Post} from "./Post/Post.tsx";
-import type {PostType} from "../../../App.tsx";
+import type {PostType} from "../../../redux/state.ts";
 
 type MyPosts = {
     posts: PostType[]
