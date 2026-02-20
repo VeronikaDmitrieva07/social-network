@@ -1,23 +1,14 @@
 import s from "./Dialogs.module.css"
 import {DialogItem} from "./DialogItem/DialogItem.tsx";
 import {Message} from "./Message/Message.tsx";
+import type {DialogType, MessageType} from "../../App.tsx";
 
-export const Dialogs = () => {
+type DialogsType = {
+    dialogs: DialogType[]
+    messages: MessageType[]
+}
 
-    const dialogs = [
-        {id: "1", name: "Veronica"},
-        {id: "2", name: "Sveta"},
-        {id: "3", name: "Dima"},
-        {id: "4", name: "Victor"},
-    ]
-
-    const messages = [
-        {id: "1", message: "Hello!"},
-        {id: "2", message: "How are you?"},
-        {id: "3", message: "What are you doing tonight?"},
-        {id: "4", message: "Hi"},
-    ]
-
+export const Dialogs = ({dialogs, messages}: DialogsType) => {
     return (
         <div className={s.dialogs}>
 
