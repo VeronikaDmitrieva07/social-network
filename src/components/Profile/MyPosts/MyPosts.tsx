@@ -2,7 +2,7 @@ import s from "./MyPosts.module.css";
 import {Post} from "./Post/Post.tsx";
 
 export const MyPosts = () => {
-    const postsData = [
+    const posts = [
         {id: "1", message: "It's my first post", likesCount: 3},
         {id: "2", message: "Hi, how are you?", likesCount: 5},
     ]
@@ -21,10 +21,7 @@ export const MyPosts = () => {
             </div>
         </div>
         <div className={s.posts}>
-
-            <Post message={postsData[0].message} count={postsData[0].likesCount}/>
-            <Post message={postsData[1].message} count={postsData[1].likesCount}/>
-
+            {posts.map(p =>  <Post message={p.message} count={p.likesCount}/>)}
         </div>
     </>
 }
