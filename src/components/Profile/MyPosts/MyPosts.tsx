@@ -3,10 +3,16 @@ import {Post} from "./Post/Post.tsx";
 
 export const MyPosts = () => {
     return <>
-        <div> my posts
+        <div className={s.postsBlock}>
+            <h3>My posts</h3>
             <div>
-                <textarea></textarea>
-                <button>Add post</button>
+                <div >
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>Add post</button>
+                </div>
+
             </div>
         </div>
         <div className={s.posts}>
